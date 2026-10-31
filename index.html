@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0B0B0C">
+<meta name="theme-color" content="#000000">
 <title>Excuse Kung Fu</title>
 <meta name="description" content="Every excuse has a counter. Online coaching by Tom Allen.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +11,7 @@
 <style>
 :root{
   color-scheme:dark;
-  --bg:#0B0B0C; --card:#141416; --ink:#FFFFFF; --muted:#9A9A97; --line:rgba(255,255,255,.85);
+  --bg:#000000; --card:#141416; --ink:#FFFFFF; --muted:#9A9A97; --line:rgba(255,255,255,.85);
   --display:'Dongle','Archivo',sans-serif;
   --body:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
 }
@@ -21,8 +21,8 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17p
 .wrap{width:100%;max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:40px;flex:1}
 :focus-visible{outline:3px solid #fff;outline-offset:4px}
 header{text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
-.logo{font-family:var(--display);font-weight:700;font-size:clamp(72px,22vw,104px);line-height:.72;letter-spacing:.01em;margin:0;text-transform:uppercase}
-.logo span{display:block}
+.logo{margin:0;width:100%}
+.logo img{display:block;width:100%;height:auto;--m:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent),linear-gradient(to bottom,transparent,#000 5%,#000 95%,transparent);-webkit-mask-image:var(--m);-webkit-mask-composite:source-in;mask-image:var(--m);mask-composite:intersect}
 .tag{margin:0;color:var(--muted);font-size:17px}
 nav ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
 .item{display:flex;align-items:center;gap:16px;padding:18px 20px;border:1.5px solid var(--line);color:var(--ink);text-decoration:none;background:var(--card);transition:background .15s,color .15s}
@@ -41,7 +41,7 @@ footer{text-align:center;font-size:13px;color:#5E5E5B;margin-top:48px}
 <body>
 <div class="wrap">
   <header>
-    <h1 class="logo" aria-label="Excuse Kung Fu"><span>Excuse</span><span>Kung Fu</span></h1>
+    <h1 class="logo"><img src="/logo.jpg" alt="Excuse Kung Fu" width="1040" height="693"></h1>
     <p class="tag">Every excuse has a counter.</p>
   </header>
   <nav aria-label="Products and services"><ul id="items"></ul></nav>
