@@ -105,7 +105,6 @@ h2{font-size:52px}
 </head>
 <body>
 <div class="wrap">
-  <div class="brandrow"><span></span><span class="by">Online coaching by Tom Allen</span></div>
   <div class="progress" aria-hidden="true"><i id="bar" style="width:0%"></i></div>
   <main id="screen"></main>
 </div>
@@ -189,7 +188,7 @@ function render(){
   $('bar').style.width = Math.round(Math.min(st.step, TOTAL) / TOTAL * 100) + '%';
   const s = $('screen'); let h = '';
   if(st.step === 0){
-    h = `<div class="step"><h1>Find your split</h1>
+    h = `<div class="step" style="text-align:center"><h1>Find your split</h1>
       <button type="button" class="btn" data-next>Start</button></div>`;
   } else if(st.step === 1){
     h = `<div class="step"><div class="qnum">Question 1 of 4</div><h2>How long have you been training?</h2>
